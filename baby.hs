@@ -12,6 +12,8 @@ removeUppercase st = [c | c <- st, c `elem` ['а'..'я']]
 rightTriangles' = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a*a + b*b == c*c, a + b + c == 24]
 difference a b = [x | x <- a, x `notElem` b]
 
+hellodog y z q = [y * z + q | y <- [1..99], z <- [1..99], q <- [1..99]]
+
 factorial :: Integer -> Integer
 factorial n = product [1..n]
 circumference :: Float -> Float
